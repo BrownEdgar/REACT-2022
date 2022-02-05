@@ -1,0 +1,10 @@
+button{
+	padding: 1rem;
+	width: 150px;
+	border-radius: 6px;
+}
+
+.dark {
+	background-color: #111;
+	color: #fff;
+}
