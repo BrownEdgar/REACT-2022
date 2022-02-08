@@ -1,19 +1,19 @@
 import './App.css';
+import ShowArray from'./ShowArray';
+import React, {useState} from 'react';
 
 function App() {
-  const arr1 = ["Anush", "Noro", "Tigran", "Alex"]
-  const arr = ["Thank you for teaching us cool and usfull things"]
-  const clickMe = () => {
-    arr.push()
-    console.log(arr);
+  const [value,setValue] = useState(["Noro","Anush", "Tigran", "Alex"])
+  const deleteNames = (index) =>{
+    let copy = value.slice()
+    copy.splice(index,1)
+    setValue(copy)
   }
   return (
-    <div className="App">
-      <div className="child">
-        <h1>React Developers</h1>
-        {JSON.stringify(arr1)}
-      <span onClick={()=> clickMe("x")}> Click Me And See Console ;)</span></div>
-      </div>
+    <div>
+    <ShowArray data={value}/>
+    <button onClick={()=> deleteNames(2)}>delete</button>
+    </div>
   );
 }
 
