@@ -3,16 +3,14 @@ import ShowArray from'./ShowArray';
 import React, {useState} from 'react';
 
 function App() {
-  const [value,setValue] = useState(["Noro","Anush", "Tigran", "Alex"])
-  const deleteNames = (index) =>{
-    let copy = value.slice()
-    copy.splice(index,1)
-    setValue(copy)
+  const [value,setValue] = useState(["You Just React"])
+  const addText = () =>{
+    setValue(["Now You See React Developers, Don't You?"])
   }
   return (
     <div>
     <ShowArray data={value}/>
-    <button onClick={()=> deleteNames(2)}>delete</button>
+    <button onClick={()=> addText()}>CHANGE TEXT</button>
     </div>
   );
 }
