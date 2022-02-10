@@ -1,15 +1,12 @@
 body{
-  
+  background-color: black;
 }
-.App {
+h1 {
   text-align: center;
   color: yellow;
 }
-.child{
-  margin-top: 250px;
-  }
   button{
-    color: black;
+    margin-left: 890px;
   }
 
 
