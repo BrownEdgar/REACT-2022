@@ -3,14 +3,14 @@ import ShowArray from'./ShowArray';
 import React, {useState} from 'react';
 
 function App() {
-  const [value,setValue] = useState(["You Just React"])
+	const [value, setValue] = useState("Now You See React Developers, Don't You?")
   const addText = () =>{
-    setValue(["Now You See React Developers, Don't You?"])
+    setValue("New content")
   }
   return (
     <div>
-    <ShowArray data={value}/>
-    <button onClick={()=> addText()}>CHANGE TEXT</button>
+		<h1>{value}</h1>
+    <button onClick={addText}>CHANGE TEXT</button>
     </div>
   );
 }
