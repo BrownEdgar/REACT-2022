@@ -9,4 +9,4 @@ function ShowArr(props){
         </div>
     );
 }
-export default ShowArr;
+export default ShowArr ;
