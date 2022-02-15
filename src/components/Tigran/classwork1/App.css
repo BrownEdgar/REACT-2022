@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    width: 80%;
+    margin: 120px auto;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container>div{
+    flex: 0 1 30%;
+    border: 1px solid black;
+    padding: 1rem;
+}
+button{
+    padding: 1rem;
+    border: none;
+    margin: 15px;
+    background-color: black;
+    color: aliceblue;
+}
