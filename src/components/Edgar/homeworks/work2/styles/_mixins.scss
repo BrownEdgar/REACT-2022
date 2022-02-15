@@ -1,0 +1,6 @@
+@mixin fullbg($x) {
+
+	background-image: url($x);
+	background-position: center;
+	background-repeat: no-repeat;
+}
