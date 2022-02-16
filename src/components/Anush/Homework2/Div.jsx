@@ -6,7 +6,7 @@ export default function div(props) {
     <div>
         <h2>{props.title}</h2>
         <p>{props.description}</p>
-        <button onClick={props.deleter}>Change</button>
+        <button onClick={props.deleter}>x</button>
     </div>
   )
 }
