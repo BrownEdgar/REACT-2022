@@ -1,0 +1,37 @@
+[
+    {		
+				"id":1,
+        "Title":"Terminator",
+        "Genre": "Action",
+        "Stock": "6",
+        "Rate": "2.5" 
+    },
+    {		
+				"id":2,
+        "Title":"Die Hard",
+        "Genre": "Action",
+        "Stock": "5",
+        "Rate": "2.5" 
+    },
+		{		
+				"id":3,
+        "Title":"Get Out",
+        "Genre": "Thriller",
+        "Stock": "8",
+        "Rate": "3.5" 
+    },
+		{		
+				"id":4,
+        "Title":"Trip to Italy",
+        "Genre": "Comedy",
+        "Stock": "7",
+        "Rate": "3.5" 
+    },
+		{		
+				"id":5,
+        "Title":"Airplane",
+        "Genre": "Comedy",
+        "Stock": "7",
+        "Rate": "3.5" 
+    }
+]
