@@ -15,6 +15,7 @@ export default function App() {
 	 const toggleButton = () => { 
 		 setisHidden(!isHidden)
 	  }
+
   return (
 	  <div className='main'>
 		  <h1>Our blog</h1>
@@ -29,6 +30,7 @@ export default function App() {
 					  deleter={() => deleter(elem.id)} />
 			  })}
 		  </div>}
+		  {info.length === 0 && <h1>{We have no data 😓}</h1>}
 	  </div>
   )
 }
