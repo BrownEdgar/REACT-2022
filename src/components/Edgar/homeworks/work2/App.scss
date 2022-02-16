@@ -1,0 +1,21 @@
+@import "./styles/variables";
+@import "./styles/mixins";
+
+
+%btn-primary {
+	background-color: rgb(38, 93, 182);
+	color: rgb(247, 250, 253);
+}
+
+.box {
+	@include fullbg("https://images.unsplash.com/photo-1644921670802-60cd81526737?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=389&q=80");
+	h1{
+		text-align: center;
+	}
+	&:hover {
+		background-color: red;
+	}
+	button {
+		@extend %btn-primary;
+	}
+}
