@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import ShowArr from "./ShowArr";
 import "./App.css"
 
-
-
 export default function App() {
 	const [value, setValue] = useState("React.js", "props", "state")
 	

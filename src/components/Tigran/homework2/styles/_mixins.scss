@@ -1,0 +1,18 @@
+
+@mixin fullfont() {
+	font-family: $font-family;
+	font-size: $font-size;
+	font-weight: $font-weight;
+}
+@mixin fullbord (){
+	border-collapse: collapse;
+}
+@mixin btn() {
+	padding: 0.7rem;
+	font-size: 21px;
+	border-radius: 5px;
+	border: none;
+	background-color: red;
+	color: $text-color;
+	font-family: $font-family;
+}

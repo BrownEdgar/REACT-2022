@@ -1,0 +1,43 @@
+@import "./styles/variables";
+@import "./styles/mixins";
+
+* {
+  box-sizing: border-box;
+}
+.myTable {
+  @include fullfont();
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  caption {
+    text-align: left;
+    @include fullfont();
+    font-size: 1.5em;
+  }
+  thead {
+    text-align: left;
+    border-bottom: 3px solid rgba(128, 128, 128, 0.39);
+    font-family: $thed-font;
+  }
+  thead,
+  tbody,
+  th,
+  tr,
+  td {
+    padding: 15px 50px;
+  }
+  td,
+  th {
+    border-top: 1px solid rgba(128, 128, 128, 0.39);
+  }
+  tr:last-child {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.39);
+  }
+  button {
+    @include btn();
+    &:hover {
+      cursor: pointer;
+      background-color: $bg-color;
+    }
+  }
+}

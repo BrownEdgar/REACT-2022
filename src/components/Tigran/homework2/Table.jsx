@@ -8,7 +8,7 @@ const Table = ({movie,handleDeleteClick}) => {
 			<td>{movie.Stock}</td>
 			<td>{movie.Rate}</td>
 			<td>
-				<button onClick={()=>handleDeleteClick(movie)}>delete</button>
+				<button onClick={()=>handleDeleteClick(movie.id)}>Delete</button>
 			</td>
 		</tr>
 	)

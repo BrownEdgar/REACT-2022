@@ -1,0 +1,46 @@
+@import "./styles/variables";
+@import "./styles/mixins";
+
+.main {
+  fieldset {
+    border-top: 2px solid rgba(128, 128, 128, 0.349);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  legend {
+    padding-right: 100px;
+    font-size: 5rem;
+    font-weight: 600;
+		font-family: 'Roboto', sans-serif;
+  }
+  h1,
+  p {
+    font-size: 5em;
+    padding-left: 1.1em;
+		font-family: $thed-font;
+  }
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  background-color: white;
+  @include fullflex();
+}
+.block {
+	@include pfullbg();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .block_text {
+    width: 80%;
+  }
+  img {
+    @include imgsize();
+  }
+}
