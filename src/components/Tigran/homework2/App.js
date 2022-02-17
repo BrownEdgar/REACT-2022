@@ -1,15 +1,17 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Table from "./Table";
 import data from "./data.json"
 
 import "./App.scss";
 
 export default function App() {
-	const [info,setInfo] = useState(data)
-	const handleDeleteClick = (elemId)=>{
+
+	const [info, setInfo] = useState(data)
+
+	const handleDeleteClick = (elemId) => {
 		const newInfo = [...info];
-		const index = info.findIndex((elem)=> elem.id === elemId);
-		newInfo.splice(index,1);
+		const index = info.findIndex((elem) => elem.id === elemId);
+		newInfo.splice(index, 1);
 		setInfo(newInfo)
 	}
 	return (
@@ -24,10 +26,10 @@ export default function App() {
 					</tr>
 				</thead>
 				<tbody>
-					{info.map((movie)=>(
-						<Table movie={movie} key={movie.id} handleDeleteClick={handleDeleteClick}/>
+					{info.map((movie) => (
+						<Table movie={movie} key={movie.id} handleDeleteClick={handleDeleteClick} />
 					))}
-					
+
 				</tbody>
 			</table>
 		</div>
