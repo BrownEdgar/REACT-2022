@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import "./App.scss"
 import Trtd from "./Trtd"
 import data from"./Data.json"
 
+import "./App.scss"
 
 export default function App() {
     const[value, setValue]=useState(data)
