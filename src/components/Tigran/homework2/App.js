@@ -14,7 +14,7 @@ export default function App() {
 	}
 	return (
 		<div className='main'>
-			<table className='myTable'>
+		<table className='myTable'>
 				<caption>Showing 5 movies in the database</caption>
 				<thead>
 					<tr>

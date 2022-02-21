@@ -1,0 +1,15 @@
+@import "./mixins";
+
+body{
+    @include image("https://images.unsplash.com/photo-1472201248592-1241c92256ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80")
+}
+.box{
+    width: 50%;
+    height: 500px;
+    margin-left: 700px;
+    background-color: hsl(208, 100%, 97%, 50%) ;
+}
+button{
+    display: block;
+    margin: 6px;
+}
