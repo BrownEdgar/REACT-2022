@@ -1,0 +1,20 @@
+[
+	{
+		"id":1,
+		"pic": "https://images.unsplash.com/photo-1599912027765-a69c78bfa3aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2xhfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+		"Model":"Mercedes Benz Silver Knight",
+		"price": "$5,115"	
+	},
+	{
+		"id":2,
+		"pic": "https://images.unsplash.com/photo-1640821826261-6a365ed2903d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXVkaSUyMGExfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+		"Model":"Audi A1 Contrast Edition",
+		"price": "$1,115"	
+	},
+	{
+		"id":3,
+		"pic": "https://images.unsplash.com/photo-1607674340500-b02476e0dc82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+		"Model":"BMW 4 GT Full Silver Edition",
+		"price": "$2,115"	
+	}
+]
