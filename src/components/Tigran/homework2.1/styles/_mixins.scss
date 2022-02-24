@@ -1,0 +1,14 @@
+@mixin fullflex() {
+	display: flex;
+  justify-content: space-evenly;
+}
+@mixin pfullbg() {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+@mixin imgsize() {
+	
+	height: 100%;
+}

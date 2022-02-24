@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Table from "./Table";
 import data from "./data.json"
 
@@ -15,7 +15,7 @@ export default function App() {
 	return (
 		<div className='main'>
 			<table className='myTable'>
-				<caption>Showing 5 movies in the database</caption>
+				<caption>Showing {info.length} movies in the database</caption>
 				<thead>
 					<tr>
 						<th>Title</th>
@@ -27,10 +27,19 @@ export default function App() {
 					</tr>
 				</thead>
 				<tbody>
-					{info.map((movie)=>(
-						<Table movie={movie} key={movie.id} handleDeleteClick={handleDeleteClick}/>
-					))}
-					
+					{
+						info.length ? (
+							
+								info.map((movie) => (
+									<Table movie={movie} key={movie.id} handleDeleteClick={handleDeleteClick} />
+								))
+							
+						)
+						: <tr>
+							<td>no data</td>
+						</tr> 
+					}
+
 				</tbody>
 			</table>
 		</div>

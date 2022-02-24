@@ -1,9 +1,11 @@
 import React, {useState} from 'react'
-import ForP from './Components/ForP'
-import Button from './Components/Button'
+import ForP from './ForP'
+import Button from "./Button" 
+import "./App.css"
 
 export default function App() {
     const [value, setValue] = useState([1,2,3,4,5,6])
+    const [zzz, setzzz] = useState(false)
 
 
    const addRandomNumber=()=>{
@@ -20,17 +22,20 @@ export default function App() {
   }
 
   const total=()=>{
-    let copy =[...value]
-    let x=copy.reduce((a,b)=>a+b)
+   return value.reduce((a,b)=>a+b)
 }
+
+  const z=()=>{
+    setzzz(!zzz)
+ }
+
   return (
     <div>
         <ForP data={value} />
-        <h1> Total </h1>
+        {zzz && <h1>Total {total()}</h1>}
         <Button name="AddRandomNumber" change={addRandomNumber}/>
         <Button name="RemoveRandomNumber" change={removeRandomNumber}/>
-        <Button name="Total" change={total}/>
-        
+        <Button name="Total" change={z}/>
     </div>
   )
 }

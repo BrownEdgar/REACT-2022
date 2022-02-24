@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Table = ({movie,handleDeleteClick}) => {
+
 	return (
 		<tr>
 			<td>{movie.Title}</td>
