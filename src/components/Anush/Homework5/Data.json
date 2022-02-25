@@ -1,23 +1,28 @@
-[
-    {"id":1,
-      "sku":64856,
-      "category":"office",
-      "price":453000,
-      "city":"germany",
-      "discount":"12%"},
-    
-      {"id":2,
-        "sku":64856,
-        "category":"office",
-        "price":453000,
-        "city":"germany",
-        "discount":"13%"},
+[{
+		"id": 1,
+		"sku": 64856,
+		"category": "office",
+		"price": 43000,
+		"city": "germany",
+		"discount": "12%"
+	},
 
-        {"id":3,
-            "sku":64856,
-            "category":"office",
-            "price":453000,
-            "city":"germany",
-            "discount":"14%"}
-    
-    ]
+	{
+		"id": 2,
+		"sku": 64856,
+		"category": "office",
+		"price": 453000,
+		"city": "Armenia",
+		"discount": "13%"
+	},
+
+	{
+		"id": 3,
+		"sku": 64856,
+		"category": "office",
+		"price": 253000,
+		"city": "Italy",
+		"discount": "14%"
+	}
+
+]
