@@ -7,7 +7,7 @@ body {
 	background-color: #111;
 	overflow: hidden;
 }
-div {
+.main {
 	max-width: 900px;
 	margin: 0 auto;
 	min-height: 400px;
@@ -29,4 +29,11 @@ form{
 		font-size: 26px;
 		border: none;
 	}
+}
+p.error {
+	background-color: #ff0000;
+	padding: 3px;
+	font-size: 18px;
+	display: inline-block;
+	margin: 0;
 }

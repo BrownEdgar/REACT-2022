@@ -11,7 +11,7 @@ export default function CheckBox() {
 	<div>
 		  <h1>{selectvalue}</h1>
 		<form >
-			  <input type="checkbox" onChange={handlerChange}/>
+			
 		</form>
 
 
