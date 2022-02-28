@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+li{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+ul{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+}
+.home{
+    background-image: url(https://images.unsplash.com/photo-1509664158680-07c5032b51e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+}
+h1{
+    padding:40px
+}
+.login{
+    width: 50%;
+    height: 500px;
+    margin: 0 auto; 
+    margin-top: 60px;
+    background-color: rgb(116, 161, 10);
+    padding-top: 80px;
+    
+}
+form{
+    height: 300px;
+    margin: 0 auto;
+    width: 70%;
+    background-color: rgb(182, 173, 173);
+    padding-left: 100px;
+    padding-top: 40px;
+}
+input{
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin: 10px 0px;
+}
+#submit{
+    background-color: rgb(116, 161, 10);
+    border: none;
+    border-radius: 5%;
+}

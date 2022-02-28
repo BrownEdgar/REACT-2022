@@ -2,21 +2,21 @@
     {"id":1,
       "sku":64856,
       "category":"office",
-      "price":43000,
+      "price":453000,
       "city":"germany",
-      "discount":"16%"},
+      "discount":"12%"},
     
       {"id":2,
         "sku":64856,
         "category":"office",
-        "price":45300,
+        "price":453000,
         "city":"germany",
         "discount":"13%"},
 
         {"id":3,
             "sku":64856,
             "category":"office",
-            "price":53000,
+            "price":453000,
             "city":"germany",
             "discount":"14%"}
     

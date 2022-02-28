@@ -1,5 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/Anush/Homework5/App'
+import { render } from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import App from "./components/Anush/Homework7/App";
 
-ReactDOM.render(<App/>,document.getElementById('root'));
+const rootElement = document.getElementById("root");
+render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  rootElement
+);
