@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter  } from 'react-router-dom'
-import App from './components/Edgar/homeworks/Work7Router/App'
+import App from './components/Tigran/homework5 router/App'
 
 ReactDOM.render(
 	<BrowserRouter>
