@@ -1,0 +1,42 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: rgb(52, 176, 207);
+	overflow: hidden;
+	text-align: center;
+}
+
+.main {
+	max-width: 900px;
+	margin: 25px auto;
+	min-height: 400px;
+	background-color: rgba(238, 223, 12, 0.397);
+	padding: 2rem;
+}
+form{
+	width: 70%;
+	margin: 0 auto;
+
+	height: 400px;
+	padding: 1rem;
+	input {
+		width: 100%;
+		border-radius: 6px;
+		display: block;
+		margin: 10px 0px;
+		padding: 20px 10px;
+		font-size: 26px;
+		border: none;
+	}
+}
+p.error {
+	background-color: #ff0000;
+	padding: 3px;
+	font-size: 18px;
+	font-family: cursive;
+	display: inline-block;
+	margin: 0;
+}
