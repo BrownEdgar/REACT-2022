@@ -1,35 +1,12 @@
 import React, {useState} from 'react'
-export default function Blog() {
-const [forms, setforms]=useState({email:"", password:""})
-
-const dontRefresh = (e) => {
-		e.preventDefault()
-	}
-
-const saveValue=(e)=>{
-	const {value, name}=e.target
-	const copy=forms[name]
-	setforms({ ...forms,[name]:value})
-	console.log(forms)
-}
-
-return (		
-      <div className='login'>
-		  <form onSubmit={dontRefresh}>
-			  <input type="email" name="email" placeholder='Email' onChange={saveValue}/>
-			  <input type="password" name="password" placeholder='Password' onChange={saveValue}/>
-			  <input id="submit" type='submit' value="Log In"/>
-		  </form>
-	  </div>
-    )
-  }
+import "./App.scss"
 
 //email validation RegExp
-/*function validateEmail(email) {
+function validateEmail(email) {
 	const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(String(email).toLowerCase());
 }
-export default function Login() {
+export default function App() {
 	const [forms, setforms] = useState({
 		email: {
 			value: "",
@@ -47,7 +24,7 @@ export default function Login() {
 			}
 		}
 	})
-	const saveValue = (e) => { 
+	const handlerChange = (e) => { 
 		const {value, name } = e.target;
 		const copy = forms[name]
 		const isValid = validate(value, name) //true false
@@ -82,17 +59,23 @@ export default function Login() {
 		return isValid
 	 }
 
-	const dontRefresh = (e) => {
+	const handlerSubmit = (e) => {
 		e.preventDefault()
 	}
-
   return (
-    <div className='login'>
-        <form onSubmit={dontRefresh}>
-            <input type="text" name="email" onChange={saveValue}/>
-            <input type="password" name="passwsord" onChange={saveValue}/>
-            <input id="submit" type="submit" value="send"/>
-        </form>
-    </div>
+
+	<div className='main'>
+		<form onSubmit={handlerSubmit}>
+			<div>
+				  <input type="text" name="email" onChange={handlerChange} />
+				  {forms.email.errorMessage && <p className='error'>{forms.email.errorMessage}</p>}
+			</div>
+			<div>
+				  <input type="password" name="password" onChange={handlerChange} />
+				  {forms.password.errorMessage && <p className='error'>{forms.password.errorMessage}</p>}
+			</div>
+			<input type="submit" value="send"/>
+		</form>
+	</div>
   )
-}*/
+}

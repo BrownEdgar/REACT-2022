@@ -1,28 +1,6 @@
 import React, {useState} from 'react'
-export default function Blog() {
-const [forms, setforms]=useState({email:"", password:""})
 
-const dontRefresh = (e) => {
-		e.preventDefault()
-	}
 
-const saveValue=(e)=>{
-	const {value, name}=e.target
-	const copy=forms[name]
-	setforms({ ...forms,[name]:value})
-	console.log(forms)
-}
-
-return (		
-      <div className='login'>
-		  <form onSubmit={dontRefresh}>
-			  <input type="email" name="email" placeholder='Email' onChange={saveValue}/>
-			  <input type="password" name="password" placeholder='Password' onChange={saveValue}/>
-			  <input id="submit" type='submit' value="Log In"/>
-		  </form>
-	  </div>
-    )
-  }
 
 //email validation RegExp
 /*function validateEmail(email) {
@@ -85,8 +63,13 @@ export default function Login() {
 	const dontRefresh = (e) => {
 		e.preventDefault()
 	}
-
-  return (
+*/
+export default function Blog() {
+    return (
+      <div className='login'></div>
+    )
+  }
+ /* return (
     <div className='login'>
         <form onSubmit={dontRefresh}>
             <input type="text" name="email" onChange={saveValue}/>
@@ -95,4 +78,4 @@ export default function Login() {
         </form>
     </div>
   )
-}*/
+*/

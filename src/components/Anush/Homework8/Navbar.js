@@ -5,7 +5,7 @@ import nkar from "./images/kinda.png"
 export default function NavBar() {
   return (
     <header>
-     <a  href='http://localhost:3000/'><img src={nkar}/></a> 
+      <img src={nkar}/>
         <ul>
            <div className='justdiv' >
            <li><Link to="/">Home</Link></li>

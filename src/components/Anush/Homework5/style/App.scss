@@ -13,3 +13,17 @@ button{
     display: block;
     margin: 6px;
 }
+pre {
+	padding: 2rem;
+	color: rgb(226, 211, 0);
+	font-weight: 800;
+	background-color: #111;
+	font-size: 24px;
+	margin: 20px;
+	display: block;
+}
+.position{
+	position: fixed;
+	left: 10%;
+	top: 10%;
+}

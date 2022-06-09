@@ -1,6 +1,6 @@
 import React,{useContext, useReducer, useState} from 'react'
 import Box from "./Box"
-import data from "./Data"
+import data from "./Data.json"
 import reducer from "./reducer"
 
 
